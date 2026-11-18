@@ -1,0 +1,19 @@
+{
+    "version": "0.0.2",
+    "description": "Extract structured data from text with named-group regexes (JSON, CSV or SQLite)",
+    "homepage": "https://github.com/gududege/golang-toolkit/tree/main/extractor",
+    "license": "MIT",
+    "url": "https://github.com/gududege/golang-toolkit/releases/download/extractor%2Fv0.0.2/extractor_0.0.2_windows_amd64.zip",
+    "hash": "993a2a5b76c32102a20dcbe2afa51401174614dedc4dc9b17d169ba546df6a6a",
+    "bin": "extractor.exe",
+    "checkver": {
+        "url": "https://github.com/gududege/golang-toolkit/releases.atom",
+        "regex": "releases/tag/extractor%2Fv([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gududege/golang-toolkit/releases/download/extractor%2Fv$version/extractor_$version_windows_amd64.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

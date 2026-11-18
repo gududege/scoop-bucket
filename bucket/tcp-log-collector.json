@@ -1,0 +1,23 @@
+{
+    "version": "0.0.1",
+    "description": "Multi-connection TCP log collector with a native UI and rotating SQLite storage",
+    "homepage": "https://github.com/gududege/tcp-log-collector",
+    "license": "Unknown",
+    "url": "https://github.com/gududege/tcp-log-collector/releases/download/v0.0.1/tcp-log-collector_0.0.1_windows_amd64.zip",
+    "hash": "9951374a2897c560d46535efe17ca50b612b907092b6d176caf8ccfb9a3cf105",
+    "bin": "tcp-log-collector.exe",
+    "shortcuts": [
+        [
+            "tcp-log-collector.exe",
+            "TCP Log Collector"
+        ]
+    ],
+    "persist": "data",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/gududege/tcp-log-collector/releases/download/v$version/tcp-log-collector_$version_windows_amd64.zip",
+        "hash": {
+            "url": "$baseurl/tcp-log-collector_$version_checksums.txt"
+        }
+    }
+}

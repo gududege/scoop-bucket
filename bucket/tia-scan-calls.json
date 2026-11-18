@@ -1,0 +1,19 @@
+{
+    "version": "0.0.2",
+    "description": "Scan Siemens TIA Portal block files and emit a JSON cross-reference call graph",
+    "homepage": "https://github.com/gududege/golang-toolkit/tree/main/tia-scan-calls",
+    "license": "MIT",
+    "url": "https://github.com/gududege/golang-toolkit/releases/download/tia-scan-calls%2Fv0.0.2/tia-scan-calls_0.0.2_windows_amd64.zip",
+    "hash": "8a02509ace7164189c68d451fdf7606dba1450cfb3700b7033ddc3e4c8a8e51b",
+    "bin": "tia-scan-calls.exe",
+    "checkver": {
+        "url": "https://github.com/gududege/golang-toolkit/releases.atom",
+        "regex": "releases/tag/tia-scan-calls%2Fv([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gududege/golang-toolkit/releases/download/tia-scan-calls%2Fv$version/tia-scan-calls_$version_windows_amd64.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

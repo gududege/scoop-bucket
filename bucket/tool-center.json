@@ -1,0 +1,23 @@
+{
+    "##": "The release bundle ships the app together with its plugins directory.",
+    "version": "0.0.3",
+    "description": "Desktop app for managing and running CLI tools through a plugin-based UI",
+    "homepage": "https://github.com/gududege/tool-center",
+    "license": "Apache-2.0",
+    "url": "https://github.com/gududege/tool-center/releases/download/v0.0.3/cli-tool-center-windows-amd64.zip",
+    "hash": "6d58278b7f31a83d834f83744b1b68c55dded5362bf4f6931165072d832a441f",
+    "bin": "cli-tool-center.exe",
+    "shortcuts": [
+        [
+            "cli-tool-center.exe",
+            "CLI Tool Center"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/gududege/tool-center/releases/download/v$version/cli-tool-center-windows-amd64.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

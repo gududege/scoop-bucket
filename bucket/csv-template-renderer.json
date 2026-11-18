@@ -1,0 +1,42 @@
+{
+    "version": "0.0.1",
+    "description": "Render Liquid templates over CSV rows with a native desktop UI",
+    "homepage": "https://github.com/gududege/csv-template-renderer",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/gududege/csv-template-renderer/releases/download/v0.0.1/csv-liquid-renderer_0.0.1_windows_amd64.exe#/csv-liquid-renderer.exe",
+            "hash": "e608c067c1d8973fc2a24c23ba84e70c27d45f9c5cab3f59ca28d3f1bb95e67e"
+        },
+        "arm64": {
+            "url": "https://github.com/gududege/csv-template-renderer/releases/download/v0.0.1/csv-liquid-renderer_0.0.1_windows_arm64.exe#/csv-liquid-renderer.exe",
+            "hash": "0e354c9215364b68d159d6b67ff2d246a3c6dc64c2347db52653a3a0e7be3ff7"
+        }
+    },
+    "bin": "csv-liquid-renderer.exe",
+    "shortcuts": [
+        [
+            "csv-liquid-renderer.exe",
+            "CSV Liquid Renderer"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/gududege/csv-template-renderer/releases/download/v$version/csv-liquid-renderer_$version_windows_amd64.exe#/csv-liquid-renderer.exe",
+                "hash": {
+                    "url": "$baseurl/checksums.txt",
+                    "find": "([a-fA-F0-9]{64})\\s+csv-liquid-renderer_$version_windows_amd64\\.exe"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/gududege/csv-template-renderer/releases/download/v$version/csv-liquid-renderer_$version_windows_arm64.exe#/csv-liquid-renderer.exe",
+                "hash": {
+                    "url": "$baseurl/checksums.txt",
+                    "find": "([a-fA-F0-9]{64})\\s+csv-liquid-renderer_$version_windows_arm64\\.exe"
+                }
+            }
+        }
+    }
+}

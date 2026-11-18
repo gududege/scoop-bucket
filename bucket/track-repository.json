@@ -1,0 +1,19 @@
+{
+    "version": "0.0.2",
+    "description": "Enrich GitHub repository metadata via GraphQL and embed it into an HTML page",
+    "homepage": "https://github.com/gududege/golang-toolkit/tree/main/track-repository",
+    "license": "MIT",
+    "url": "https://github.com/gududege/golang-toolkit/releases/download/track-repository%2Fv0.0.2/track-repository_0.0.2_windows_amd64.zip",
+    "hash": "0c232590fae4a3eeef61a126be65ed97ee38025a3bcc9eaed3d2898960ea7f48",
+    "bin": "track-repository.exe",
+    "checkver": {
+        "url": "https://github.com/gududege/golang-toolkit/releases.atom",
+        "regex": "releases/tag/track-repository%2Fv([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gududege/golang-toolkit/releases/download/track-repository%2Fv$version/track-repository_$version_windows_amd64.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

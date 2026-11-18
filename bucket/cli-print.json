@@ -1,0 +1,19 @@
+{
+    "version": "0.0.2",
+    "description": "Debug helper that prints CLI arguments, environment variables, working directory and exit code",
+    "homepage": "https://github.com/gududege/golang-toolkit/tree/main/cli-print",
+    "license": "MIT",
+    "url": "https://github.com/gududege/golang-toolkit/releases/download/cli-print%2Fv0.0.2/cli-print_0.0.2_windows_amd64.zip",
+    "hash": "9b398128c1e0edb87c81b3e2205ac883575e39e4e81a85152b6ad8479d3a6c91",
+    "bin": "cli-print.exe",
+    "checkver": {
+        "url": "https://github.com/gududege/golang-toolkit/releases.atom",
+        "regex": "releases/tag/cli-print%2Fv([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gududege/golang-toolkit/releases/download/cli-print%2Fv$version/cli-print_$version_windows_amd64.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

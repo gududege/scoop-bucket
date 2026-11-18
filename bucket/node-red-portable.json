@@ -1,0 +1,24 @@
+{
+    "##": "Release tags are <node-red version>_<build date>; the build date is part of the download URL.",
+    "version": "5.0.10",
+    "description": "Self-contained Node-RED bundle with its own Node.js runtime and launcher",
+    "homepage": "https://github.com/gududege/node-red-portable",
+    "license": "Unknown",
+    "url": "https://github.com/gududege/node-red-portable/releases/download/5.0.10_20261117/nodered-5.0.10-windows-x64.zip",
+    "hash": "deca4d2ee8be4894fc1cadff63e883e839925e4ba38ea0d7bffac2d664dc90d0",
+    "extract_dir": "nodered-5.0.10-windows-x64",
+    "bin": "node-red.cmd",
+    "persist": "data",
+    "notes": "Run 'node-red' and open http://127.0.0.1:1880/. Flows and settings are kept in the persistent 'data' directory.",
+    "checkver": {
+        "url": "https://github.com/gududege/node-red-portable/releases.atom",
+        "regex": "releases/tag/(?<version>[\\d.]+)_(?<date>\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gududege/node-red-portable/releases/download/$version_$matchDate/nodered-$version-windows-x64.zip",
+        "extract_dir": "nodered-$version-windows-x64",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

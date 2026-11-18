@@ -1,0 +1,19 @@
+{
+    "version": "0.0.2",
+    "description": "Download .NET SDK archives and extract runtime components",
+    "homepage": "https://github.com/gududege/golang-toolkit/tree/main/dotnet-runtime-extractor",
+    "license": "MIT",
+    "url": "https://github.com/gududege/golang-toolkit/releases/download/dotnet-runtime-extractor%2Fv0.0.2/dotnet-runtime-extractor_0.0.2_windows_amd64.zip",
+    "hash": "df07a8975da51ebd7191e8d9adba7022721999341732eb9060be0aaf0c9d28c8",
+    "bin": "dotnet-runtime-extractor.exe",
+    "checkver": {
+        "url": "https://github.com/gududege/golang-toolkit/releases.atom",
+        "regex": "releases/tag/dotnet-runtime-extractor%2Fv([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gududege/golang-toolkit/releases/download/dotnet-runtime-extractor%2Fv$version/dotnet-runtime-extractor_$version_windows_amd64.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

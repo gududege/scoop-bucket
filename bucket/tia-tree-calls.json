@@ -1,0 +1,19 @@
+{
+    "version": "0.0.2",
+    "description": "Render a call hierarchy tree from the JSON graph produced by tia-scan-calls",
+    "homepage": "https://github.com/gududege/golang-toolkit/tree/main/tia-tree-calls",
+    "license": "MIT",
+    "url": "https://github.com/gududege/golang-toolkit/releases/download/tia-tree-calls%2Fv0.0.2/tia-tree-calls_0.0.2_windows_amd64.zip",
+    "hash": "9a17dce2605354c4d70421c64075cc25f06db4be4987896c102f0421a9b36d61",
+    "bin": "tia-tree-calls.exe",
+    "checkver": {
+        "url": "https://github.com/gududege/golang-toolkit/releases.atom",
+        "regex": "releases/tag/tia-tree-calls%2Fv([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gududege/golang-toolkit/releases/download/tia-tree-calls%2Fv$version/tia-tree-calls_$version_windows_amd64.zip",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
